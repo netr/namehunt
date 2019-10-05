@@ -4,6 +4,8 @@
 >
 >https://netr.github.io/namehunt
 
+[![Build Status](https://travis-ci.com/netr/namehunt.svg?branch=master)](https://travis-ci.com/netr/namehunt)
+
 ## Build Setup
 
 ``` bash
