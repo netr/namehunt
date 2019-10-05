@@ -46,14 +46,18 @@ export default {
       return url.replace("https://github.com", "");
     },
     getColor(stars) {
-      if (stars > 5000) return "green";
-      else if (stars > 1000) return "blue";
-      else if (stars > 300) return "orange";
+      if (stars >= 5000) return "green";
+      else if (stars >= 1000) return "blue";
+      else if (stars >= 300) return "orange";
       else return "grey";
     },
     highlight(name) {
       return name.replace(new RegExp(this.searchTerm, "gi"), match => {
-        return '<span class="highlightText">' + match + "</span>";
+        if(match !== "") {
+          return '<span class="highlightText">' + match + "</span>";
+        } else {
+          return match;
+        }
       });
     }
   },

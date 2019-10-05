@@ -10,7 +10,7 @@
         name="search_box"
         @keydown.enter="submitSearchTerm"
       ></v-text-field>
-      <v-btn color="success" class="mb-4" @click="submitSearchTerm">Search</v-btn>
+      <v-btn color="success" name="search_button" class="mb-4" @click="submitSearchTerm">Search</v-btn>
     </div>
 
   </div>
