@@ -43,6 +43,7 @@ export default {
   */
   modules: [
   ],
+
   router: {
     base: '/namehunt/'
   },
