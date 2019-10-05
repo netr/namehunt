@@ -1,6 +1,8 @@
-# nuxtlearn
+# NameHunt
 
-> My solid Nuxt.js project
+> GitHub name search tool for open source projects hunting for unique brandable names3
+>
+>https://netr.github.io/namehunt
 
 ## Build Setup
 

@@ -20,16 +20,18 @@ describe("SearchBox", () => {
     expect(wrapper.vm.searchterm).toBe("netr");
   });
 
-  test("enters text, presses enter, and emits search event", () => {
-    let searchText = wrapper.find('[name="search_box"]');
-    searchText.trigger('keydown.enter');
-    expect(wrapper.emitted().search).toBeTruthy()
-  });
-
   test("enters text, presses enter, and emits correct value", () => {
     let searchText = wrapper.find('[name="search_box"]');
     searchText.setValue("netr");
     searchText.trigger('keydown.enter');
+    expect(wrapper.emitted().search[0]).toEqual(["netr"])
+  });
+
+  test("enters text, clicks button, and emits correct value", () => {
+    let searchText = wrapper.find('[name="search_box"]');
+    searchText.setValue("netr");
+    let searchButton = wrapper.find('[name="search_button"]');
+    searchButton.trigger('click');
     expect(wrapper.emitted().search[0]).toEqual(["netr"])
   });
 
