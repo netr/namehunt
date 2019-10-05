@@ -1,7 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/namehunt_site/'
+    base: '/namehunt/'
   }
 } : {};
 
