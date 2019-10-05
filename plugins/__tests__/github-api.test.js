@@ -1,5 +1,5 @@
 import mockAxios from "axios";
-import {mockData} from "./github-api.mock"
+import {mockData} from "../__mocks__/github-api.mock"
 import {searchRepositories} from "../github-api";
 
 jest.mock('axios', () => ({

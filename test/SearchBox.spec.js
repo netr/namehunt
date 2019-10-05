@@ -40,25 +40,13 @@ describe("SearchBox", () => {
 
 describe("Refine Search", () => {
   let wrapper;
-  beforeAll(() => {
-    Vue.use(vuetify);
-    wrapper = mount(SearchBox, { Vue });
-  });
+  // beforeAll(() => {
+  //   Vue.use(vuetify);
+  //   wrapper = mount(SearchBox, { Vue });
+  // });
 
-  test("should toggle refine search box", () => {
-
-  });
-
-  test("should close refine search box", () => {
-
-  });
-
-  test("should language specific search", () => {
-
-  });
-
-  test("should sort by stars asc", () => {
-
-  });
-
+  test.todo("should toggle refine search box");
+  test.todo("should close refine search box");
+  test.todo("should language specific search");
+  test.todo("should sort by stars asc");
 });
